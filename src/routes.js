@@ -1,9 +1,7 @@
-const{ Router } = require('express');
+const express= require('express');
+const CandidateController = require('./controllers/CandidateController')
+const routes = new express.Router();
 
-const routes = new Router();
-
-router.get('/', (req, res) => {
-    return res.json({message: 'Okay'})
-})
+routes.post('/register', CandidateController.register);
 
 module.exports = routes;

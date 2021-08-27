@@ -1,0 +1,133 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API do projeto Start Tech",
+      "description": "a api do projeto",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "cargo": {
+                      "type": "string"
+                    },
+                    "dia": {
+                      "type": "number"
+                    },
+                    "mes": {
+                      "type": "number"
+                    },
+                    "ano": {
+                        "type": "number"
+                    },
+                    "estadoCivil": {
+                        "type": "string"
+                      },
+                    "sexo": {
+                        "type": "string"
+                    },
+                      "cep": {
+                        "type": "number"
+                    },
+                    "rua": {
+                        "type": "string"
+                    },
+                    "bairro": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "estado": {
+                        "type": "string"
+                    },
+                    "telefone1": {
+                        "type": "number"
+                    },
+                    "telefone2": {
+                        "type": "number"
+                    },
+                    "celular": {
+                        "type": "number"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "identidade": {
+                        "type": "number"
+                    },
+                    "cpf": {
+                        "type": "number"
+                    },
+                    "veiculo": {
+                        "type": "string"
+                    },
+                    "habilitacao": {
+                        "type": "string"
+                    },
+                    "escolaridade": {
+                        "type": "string"
+                    },
+                    "instituicao": {
+                        "type": "string"
+                    }
+
+                  }
+                },
+                "examples": {
+                  "eu mermo": {
+                    "value": {
+                        "nome": "Viviane Santos",
+                        "cargo": "Auxiliar Administrativo",
+                        "dia": "10",
+                        "mes": "10",
+                        "ano": "1990",
+                        "estadoCivil":"solteira",
+                        "sexo": "feminino",
+                        "cep": "23510160",
+                        "rua": "Beco Lemos",
+                        "bairro": "Santa Cruz",
+                        "cidade": "Rio de Janeiro",
+                        "estado": "RJ",
+                        "telefone1": "2131999999",
+                        "telefone2": "2132999999",
+                        "celular": "21999999999",
+                        "email": "meuemail@email.com",
+                        "identidade": "145723697",
+                        "cpf": "14625741021",
+                        "veiculo": "sim",
+                        "habilitacao": "sim",
+                        "escolaridade": "Superior Completo",
+                        "instituicao":"Universidade Candido Mendes"
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

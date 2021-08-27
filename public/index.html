@@ -217,10 +217,10 @@
                         <h3 class="cabecalhoForm">DOCUMENTOS</h3></p>
                         <div>
                             <label for="identidade">Identidade</label>
-                            <input type="text"  name="identidade" placeholder="Somente números"/>
-                        
+                            <input type="text"  name="identidade" placeholder="Somente números"/></div>
+                        <div method="get" action=".">
                             <label for="cpf">CPF:</label><span class="preenchimentoObrigatorio">*</span>
-                            <input type="text"  id="cpf" required placeholder="Somente números" /><span id="erroId" style="display: none;">Preencher Campo</span>
+                            <input type="text"  id="cpf" onblur="validaCPF(this.value)" required placeholder="Somente números" /><span id="erroId" style="display: none;">Preencher Campo</span>
                         </div>
                         <div>
                             <label for="veiculo">Possui Veiculo:</label>

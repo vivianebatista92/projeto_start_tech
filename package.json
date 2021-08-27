@@ -1,24 +1,31 @@
 {
-  "name": "Projeto",
+  "name": "projeto",
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.1",
+    "swagger": "^0.7.5",
+    "swagger-ui-express": "^4.1.6",
+    "yarn": "^1.22.11"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vivianebatista92/projeto_start_tech.git"
-  },
+  "repository": "git+https://github.com/vivianebatista92/projeto_start_tech.git",
   "keywords": [],
-  "author": "",
+  "author": "Viviane Santos Batista",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vivianebatista92/projeto_start_tech/issues"
   },
-  "homepage": "https://github.com/vivianebatista92/projeto_start_tech#readme"
+  "homepage": "https://github.com/vivianebatista92/projeto_start_tech#readme",
+  "description": "projeto start tech"
 }
