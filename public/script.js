@@ -128,7 +128,7 @@ const Formulario = () => {
     let form = {
     nome: document.getElementById('nome').value,
     cargo: document.getElementById('cargo').value,
-    dia: document.getElementById('dia').value,
+    dia: document.getElementById('dataDia').value,
     mes: document.getElementById('mes').value,
     ano: document.getElementById('ano').value,
     estadoCivil: document.getElementById('estadoCivil').value,
@@ -141,13 +141,13 @@ const Formulario = () => {
     telefone1: document.getElementById('telefone1').value,
     telefone2: document.getElementById('telefone2').value,
     celular: document.getElementById('celular').value,
-    email: document.getElementById('mail').value,
+    email: document.getElementById('email').value,
     identidade: document.getElementById('identidade').value,
     cpf: document.getElementById('cpf').value,
     veiculo: document.getElementById('veiculo').value,
     habilitacao: document.getElementById('habilitacao').value,
-    nivelEscolariadade: document.getElementById('nivelEscolaridade').value,
-    instituicaoEnsino: document.getElementById('instituicaoEnsino').value
+    nivelEscolariadade: document.getElementById('escolaridade').value,
+    instituicaoEnsino: document.getElementById('instituicao').value
     };
 
 console.log(form);

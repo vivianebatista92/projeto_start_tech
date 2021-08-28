@@ -32,13 +32,13 @@
                       "type": "string"
                     },
                     "dia": {
-                      "type": "number"
+                      "type": "string"
                     },
                     "mes": {
-                      "type": "number"
+                      "type": "string"
                     },
                     "ano": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "estadoCivil": {
                         "type": "string"
@@ -47,7 +47,7 @@
                         "type": "string"
                     },
                       "cep": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "rua": {
                         "type": "string"
@@ -62,22 +62,22 @@
                         "type": "string"
                     },
                     "telefone1": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "telefone2": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "celular": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "email": {
                         "type": "string"
                     },
                     "identidade": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "cpf": {
-                        "type": "number"
+                        "type": "string"
                     },
                     "veiculo": {
                         "type": "string"

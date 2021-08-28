@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <script src="./script.js "></script>
+    <link rel="stylesheet" href="./public/estilo.css">
+    <script src="./public/script.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <header>
     <div>
-        <img src="../Logos/jobsnet.png" alt="Logo JobsNet" width="110px">
+        <img src="./Logos/jobsnet.png" alt="Logo JobsNet" width="110px">
         </div>
 </header>
 <body>
@@ -42,39 +42,39 @@
                             <div id="dataNascimento" class="invalidData">
                                 <label for="DataNascimento">Data de Nascimento </label><span class="preenchimentoObrigatorio">*</span><br>
                                 <small>Dia</small>
-                                <select name="dia" id="dia" required>
+                                <select name="dia" id="dataDia" required>
                                     <option value=""></option>
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">05</option>
-                                    <option value="">06</option>
-                                    <option value="">07</option>
-                                    <option value="">08</option>
-                                    <option value="">09</option>
-                                    <option value="">10</option>
-                                    <option value="">11</option>
-                                    <option value="">12</option>
-                                    <option value="">13</option>
-                                    <option value="">14</option>
-                                    <option value="">15</option>
-                                    <option value="">16</option>
-                                    <option value="">17</option>
-                                    <option value="">18</option>
-                                    <option value="">19</option>
-                                    <option value="">20</option>
-                                    <option value="">21</option>
-                                    <option value="">22</option>
-                                    <option value="">23</option>
-                                    <option value="">24</option>
-                                    <option value="">25</option>
-                                    <option value="">26</option>
-                                    <option value="">27</option>
-                                    <option value="">28</option>
-                                    <option value="">29</option>
-                                    <option value="">30</option>
-                                    <option value="">31</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
                                 </select>
                     
                                 <small>Mês</small>
@@ -168,18 +168,18 @@
                                                 
                             <label for="estadoCivil">Estado Civil:</label>
                             <select name="estadoCivil" id="estadoCivil">
-                                <option value="SL"> Solteiro(a) </option>
-                                <option value="CS"> Casado(a) </option>
-                                <option value="DV"> Divorciado(a) </option>
-                                <option value="VI"> Viúvo(a) </option>
+                                <option value="Solteiro(a)"> Solteiro(a) </option>
+                                <option value="Casado(a)"> Casado(a) </option>
+                                <option value="Divorciado(a)"> Divorciado(a) </option>
+                                <option value="Viuvo(a)"> Viúvo(a) </option>
                             </select>
                         
                         
                             <label for="sexo">Sexo:</label>
                             <select id="sexo" name="sex">
-                                <option value="M"> Masculino </option>
-                                <option value="F"> Feminino </option>
-                                <option value="O"> Outros </option>
+                                <option value="Masculino"> Masculino </option>
+                                <option value="Feminino"> Feminino </option>
+                                <option value="Outros"> Outros </option>
                             </select>
                         </div>
                         <div class="row">
@@ -212,7 +212,7 @@
                         </div>
                     <div>
                         <label for="email">Email:</label><span class="preenchimentoObrigatorio">*</span>
-                        <input type="email" id="mail" name="email" required />
+                        <input type="email" id="email" name="email" required />
                     </div>
                         <p>
                         <h3 class="cabecalhoForm">DOCUMENTOS</h3></p>
@@ -242,7 +242,7 @@
                                 
                                 <div>
                                     <label for="nivelEscolaridade">Nivel de Escolaridade:</label>
-                                    <select id="nivelEscolaridade">
+                                    <select id="escolaridade">
                                         <option value="medioIncompleto"> Médio Incompleto </option>
                                         <option value="medioCompleto"> Médio Completo </option>
                                         <option value="superiorIncompleto"> Superior Incompleto </option>
@@ -252,7 +252,7 @@
                                     </select>
                                     
                                     <label for="instituicaoEnsino">Instituição de Ensino</label>
-                                    <input type="text" name="instituicao"  id="instituicaoEnsino" />
+                                    <input type="text" name="instituicao"  id="instituicao" />
                                     </div>
                     
                                    
