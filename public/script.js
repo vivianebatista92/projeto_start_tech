@@ -1,7 +1,7 @@
 
 
 
-
+const validaCEP = (cep) => cep.toString().length == 8;
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('rua').value=("");
@@ -165,8 +165,14 @@ const criarCandidato = async (candidato) => {
             body: JSON.stringify(Formulario())
         });
         if (usuario.status === 200) {
-            alert('DEU CERTO')
+            alert('Seu cadastro foi realizado com sucesso.');
         }
+               
+        else {
+            alert('Cadastro realizado')
+        }
+
     } 
-       
+    
+    
     
