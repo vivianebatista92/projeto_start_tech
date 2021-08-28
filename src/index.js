@@ -9,7 +9,7 @@ const cors = require('cors');
 
 
 
-mongoose.connect('mongodb+srv://vivianebatista92:24julho56@starttech.glqz0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://vivianebatista92:24julho56@starttech.glqz0.mongodb.net/StartTech?retryWrites=true&w=majority');
 
 
 app.use(cors());

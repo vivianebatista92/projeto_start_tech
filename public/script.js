@@ -1,5 +1,8 @@
 
-   function limpa_formulário_cep() {
+
+
+
+function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('rua').value=("");
     document.getElementById('bairro').value=("");
@@ -117,6 +120,53 @@ function validacaoCPF() {
     } else {
         document.getElementById('erroCPF').style.display = 'none';
         document.getElementById('erroBlocoCPF').style.border = 'none';
-        return true;
+        return true;                                                                                                                                                                              
     }
 }
+
+const Formulario = () => {
+    let form = {
+    nome: document.getElementById('nome').value,
+    cargo: document.getElementById('cargo').value,
+    dia: document.getElementById('dia').value,
+    mes: document.getElementById('mes').value,
+    ano: document.getElementById('ano').value,
+    estadoCivil: document.getElementById('estadoCivil').value,
+    sexo: document.getElementById('sexo').value,
+    cep: document.getElementById('cep').value,
+    rua: document.getElementById('rua').value,
+    bairro: document.getElementById('bairro').value,
+    cidade: document.getElementById('cidade').value,
+    estado: document.getElementById('uf').value,
+    telefone1: document.getElementById('telefone1').value,
+    telefone2: document.getElementById('telefone2').value,
+    celular: document.getElementById('celular').value,
+    email: document.getElementById('mail').value,
+    identidade: document.getElementById('identidade').value,
+    cpf: document.getElementById('cpf').value,
+    veiculo: document.getElementById('veiculo').value,
+    habilitacao: document.getElementById('habilitacao').value,
+    nivelEscolariadade: document.getElementById('nivelEscolaridade').value,
+    instituicaoEnsino: document.getElementById('instituicaoEnsino').value
+    };
+
+console.log(form);
+return form
+}
+
+const criarCandidato = async (candidato) => {
+    
+        const usuario =  fetch('http://localhost:5000/register', {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(Formulario())
+        });
+        if (usuario.status === 200) {
+            alert('DEU CERTO')
+        }
+    } 
+       
+    

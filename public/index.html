@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <script src="./script.js "></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <header>
     <div>
-        <img src="Logos/jobsnet.png" alt="Logo JobsNet" width="110px">
+        <img src="../Logos/jobsnet.png" alt="Logo JobsNet" width="110px">
         </div>
 </header>
 <body>
@@ -25,17 +25,18 @@
             <div class="form" id="about">
                 <p>
 
-                    <form  name="formcadastro" method="post" action="nenhumaPagina" onsubmit="return validacao()">
+                    <form id= "formulario" name="formcadastro" onchange="Formulario()">
+                        <!-- method="POST" action="http://localhost:5000/registro onsubmit="return check_form()"" -->
                          
                         <h3 class="cabecalhoForm">DADOS PESSOAIS</h3>
                                 
                         <div>
                             <label for="name">Nome:</label><span class="preenchimentoObrigatorio">*</span>
-                            <input type="text"  name="nome" required placeholder="Digite seu nome" />
+                            <input type="text" id="nome" name="name" required placeholder="Digite seu nome" />
                         
                         
                             <label for="cargoPretendido">Cargo Pretendido:</label>
-                            <input type="text"  name="cargoPretendido"  />
+                            <input type="text" id="cargo"  name="cargoPretendido"  />
                         </div>                  
                         <div>
                             <div id="dataNascimento" class="invalidData">
@@ -175,7 +176,7 @@
                         
                         
                             <label for="sexo">Sexo:</label>
-                            <select name="sexo">
+                            <select id="sexo" name="sex">
                                 <option value="M"> Masculino </option>
                                 <option value="F"> Feminino </option>
                                 <option value="O"> Outros </option>
@@ -199,25 +200,25 @@
         
                         </div>
                             <label for="tele1">Telefone 1:</label> <span class="preenchimentoObrigatorio">*</span>
-                            <input type="text"  name="tele1" required/>
+                            <input type="text" id="telefone1" name="tele1" required/>
                         
                         
                             <label for="tele2">Telefone 2:</label>
-                            <input type="text"  name="tele2" />
+                            <input type="text" id="telefone2" name="tele2" />
                         </div>
                         <div>
                             <label for="tele3">Celular:</label><span class="preenchimentoObrigatorio">*</span>
-                            <input type="text"  name="tele3" required />
+                            <input type="text" id="celular" name="tele3" required />
                         </div>
                     <div>
                         <label for="email">Email:</label><span class="preenchimentoObrigatorio">*</span>
-                        <input type="email" name="email" required />
+                        <input type="email" id="mail" name="email" required />
                     </div>
                         <p>
                         <h3 class="cabecalhoForm">DOCUMENTOS</h3></p>
                         <div>
                             <label for="identidade">Identidade</label>
-                            <input type="text"  name="identidade" placeholder="Somente números"/></div>
+                            <input type="text" id="identidade"  name="identidade"  placeholder="Somente números"/></div>
                         <div method="get" action=".">
                             <label for="cpf">CPF:</label><span class="preenchimentoObrigatorio">*</span>
                             <input type="text"  id="cpf" onblur="validaCPF(this.value)" required placeholder="Somente números" /><span id="erroId" style="display: none;">Preencher Campo</span>
@@ -251,11 +252,11 @@
                                     </select>
                                     
                                     <label for="instituicaoEnsino">Instituição de Ensino</label>
-                                    <input type="text" name="instituicaoEnsino"  id="instituicaoEnsino" />
+                                    <input type="text" name="instituicao"  id="instituicaoEnsino" />
                                     </div>
                     
-
-                    <button class="botao" id="botao">Enviar</button>
+                                   
+                    <button class="botao" id="botao" type="submit" onclick="criarCandidato()" >Enviar</button>
 
                 </p>
             </div>
@@ -264,7 +265,7 @@
 
 
         </section>
-
+        </form>
     </main>
     
     
