@@ -168,3 +168,10 @@ form{
     margin-top: 20px;
     text-align: center;
 }
+
+#alinhar{ text-align: center }
+.botao{
+    width: 350px;
+    text-align: center;
+    padding: 15px 20px;
+    }
