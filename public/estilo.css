@@ -197,3 +197,20 @@ form{
     text-align: center;
     padding: 15px 20px;
     }
+
+footer{
+    
+    background-color: black;
+    
+}
+
+.final{
+    color: white;
+    text-align: center;
+}
+
+.final a{
+    color: white;
+    text-decoration: underline;
+    
+}
