@@ -58,6 +58,13 @@ header ul li a:hover{
     text-decoration: underline;
 }
 
+.logo{
+        max-width: 700px;;
+        width: auto;
+        height: auto;
+    
+}
+
 .container{
     text-align: center;
     font-family: 'Poppins', sans-serif;
